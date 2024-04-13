@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+  <!-- README.md
+    本维基基于 Docsify，使用了多种插件，致力给各位阅读本文档的用户以最好的体验
+    内部版本号: 1.0.3
+  -->
+  <!-- changelog.md
+    1.0.1:
+      增加自定义提示框
+    1.0.2:
+      增加 toc 拓展
+      修改两个 css 文件使其符合内容
+      将右上角的样式修改为 shields.io 的徽章
+    1.0.3:
+      修改 toc 拓展的样式
+    1.0.4:
+      增加“回到顶部”按钮
+      代码清理，去除了多余的 /css 文件夹
+    1.0.5:
+      增加右上角毛玻璃 Github 图标
+      修改了加载界面的图标
+      修复了侧边栏展开消失的问题
+      将 unpkg.com 更换为了 fastly.jsdelivr.net 以优化脚本加载速度
+  -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Continue Project</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="HuskHomes Chinese Wiki Translation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css">
+  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/sidebar.min.css" />
+  <link rel="stylesheet" href="css/ui-buttons.css">
+</head>
+<body>
+  <div id="app">
+    <svg class="load" viewBox="25 25 50 50">
+      <circle r="20" cy="50" cx="50"></circle>
+    </svg>
+  </div>
+  <script>
+    window.$docsify = {
+      name: 'HuskHomes 中文维基',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索...',
+        noData: '无结果',
+        depth: 4
+      },
+      loadSidebar: true,
+      sidebarDisplayLevel: 1,
+      loadNavbar: true,
+      pagination: {
+        previousText: {
+          '/en/': 'PREVIOUS',
+          '/': '上一章节'
+        },
+        nextText: {
+          '/en/': 'NEXT',
+          '/': '下一章节'
+        },
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      copyCode: {
+        buttonText: '📄',
+        errorText: '出错了!',
+        successText: '已复制!',
+      },
+      tabs: {
+        tabComments: true,
+        tabHeadings: true
+      },
+      darkMode: {
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+        },
+        light: {
+          background: "white",
+          toggleBtnBg: "#c9c9c9",
+          textColor: "var(--theme-color)"
+        },
+      hideCode: {
+          scroll: true, // Enable scrolling
+          height: 300 // Max height
+        },
+      'flexible-alerts': {
+          style: 'flat',
+          note: {
+            label: {
+              '/': '笔记'
+            }
+          },
+          tip: {
+            label: {
+              '/': '提示'
+            }
+          },
+          warning: {
+            label: {
+              '/': '警告'
+            }
+          },
+          attention: {
+            label: {
+              '/': '注意'
+            }
+          }
+        }
+      },
+      toc: {
+        tocMaxLevel: 3,
+        target: 'h2, h3, h4, h5, h6',
+        ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+      },
+      scrollToTop: {
+        auto: true,
+        text: '🔼',
+        right: 12,
+        bottom: 52,
+        offset: 25
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//fastly.jsdelivr.net/npm/docsify@4"></script>
+  <!-- ↑ 此为 Docsify 本体组件 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- ↑ 此为 Doscify 搜索拓展组件 ↑-->
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- ↑ 此为 Docsify 图片缩放拓展组件 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- ↑ 此为 Docsify 复制代码拓展组件 ↑ -->
+  <script src="https://fastly.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
+  <!-- ↑ 此为 Docsify Java 语法拓展组件 ↑ -->
+  <script src="https://fastly.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- ↑ 此为 Docsify TAB 拓展组件 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- ↑ 此为 Docsify 侧边栏展开优化组件 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-footnote/dist/docsify-footnote.min.js"></script>
+  <!-- ↑ 此为 Docsify 脚注支持组件 ↑ -->
+  <script src="https://fastly.jsdelivr.net/npm/docsify-bilibili@latest/bilibili.min.js"></script>
+  <!-- ↑ 此为 Docsify Bilibili 视频嵌入支持组件 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- ↑ 此为 Docsify 仿 Gitbook 式翻页标签 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+  <!-- ↑ 此为 Docsify 夜间模式组件 ↑ -->
+  <script src="https://fastly.jsdelivr.net/npm/docsify-hide-code/dist/docsify-hide-code.min.js"></script>
+  <!-- ↑ 此为 Docsify 代码折叠组件 ↑ -->
+  <script src="https://fastly.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
+  <!-- ↑ 此为 Docsify 自定义提示框组件 ↑ -->
+  <script>
+    Prism.languages['hocon'] = {
+        'number': {
+            pattern: /(?<![^\s\u00a0\u2007\u202f\ufeff$"{}\[\]:=,+#`^?!@*&])(-?(0|[1-9]\d*)((\.\d+)?([eE][+-]?\d+)?)?)(?![^\s\u00a0\u2007\u202f\ufeff$"{}\[\]:=,+#`^?!@*&])/i,
+        },
+        'punctuation': /[{}[\]]/,
+        'property': {
+            pattern: /(^|[^\\])"?(?:\\.-|[^\\"\r\n])*"?(?=\s*=)/,
+            lookbehind: true,
+            greedy: true
+        },
+        'string': {
+            pattern: /(")(([^"\\n]|\\["\\bfnrt/]|\\u[0-9a-fA-F]{4})*)(")/,
+        },
+        'comment': {
+            pattern: /(#|\/\/).*/
+        },
+        'boolean': /(?<![^\\s\u00a0\u2007\u202f\ufeff$"{}\[\]:=,+#`^?!@*&])(include|true|false|yes|no|on|off)(?![^\s\u00a0\u2007\u202f\ufeff$"{}\[\]:=,+#`^?!@*&])/,
+        'operator': {
+            pattern: /[=:]/,
+            lookbehind: true
+        },
+        'null': {
+            pattern: /\bnull\b/,
+            alias: 'keyword'
+        }
+    }
+  </script>
+  <!-- ↑ 此为引自 AstralFlow 维基的 HOCON 语法高亮 ↑ -->
+  <!-- 详细内容请见 https://github.com/kalculos/AstralFlow/blob/main/docs/index.html -->
+  <script src="https://fastly.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
+  <!-- ↑ 此为 Docsify 本章目录拓展组件 ↑ -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+  <!-- ↑ 此为 Docsify 回到顶部拓展组件 ↑ -->
+</body>
+</html>
