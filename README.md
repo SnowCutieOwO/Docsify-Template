@@ -1,13 +1,22 @@
-# 前言
+# Docsify Template
 
-2024/4/13 16:45
+用于 Minecraft 维基翻译内容的通用模板，可 fork 至其他仓库用于个人用途。
 
-从下午到现在开始完全就在做翻译，没有停过。    
-还是这几天能安安心心干活，比较舒服。    
-虽然但是，又得吃饭了。    
+示例：见 [Continue](https://www.github.com/SnowCutieOwO/Continue) 中的维基。
 
-让我晚点再想想我该吃些什么吧。    
-现在先安安心心做翻译。    
+# 目录结构
 
-维基原文：https://nightexpress.gitbook.io/excellentcrates    
-插件原帖：https://www.spigotmc.org/resources/excellentcrates-%E2%AD%90-best-free-crates-plugin.48732/
+* `css/` - 存储维基的额外 css
+* `images/` - 存储维基内置的图片
+* `js/` - 存储维基内的脚本
+* `README.md` - 维基默认显示的首页，即本页内容
+* `home.md` - 维基默认的插件维基首页
+* `_sidebar.md` - 维基侧边栏内容
+* `_navbar.md` - 维基导航栏内容
+* `_404.md` - 维基页面不存在内容
+
+# 借物表
+
+## Docsify 脚本
+
+## UIVerse 样式
