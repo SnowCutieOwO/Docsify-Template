@@ -1,22 +1,13 @@
-# Docsify Template
+# 介绍页面
 
-用于 Minecraft 维基翻译内容的通用模板，可 fork 至其他仓库用于个人用途。
+这是模板维基的介绍页面，当你从其他地方访问该维基时，这个文件（`README.md`）同时也会作为其入口文件。
 
-示例：见 [Continue](https://www.github.com/SnowCutieOwO/Continue) 中的维基。
+# 本维基借物表
 
-# 目录结构
+右上角的 Github 图标：https://uiverse.io/vinodjangid07/wonderful-yak-52
 
-* `css/` - 存储维基的额外 css
-* `images/` - 存储维基内置的图片
-* `js/` - 存储维基内的脚本
-* `README.md` - 维基默认显示的首页，即本页内容
-* `home.md` - 维基默认的插件维基首页
-* `_sidebar.md` - 维基侧边栏内容
-* `_navbar.md` - 维基导航栏内容
-* `_404.md` - 维基页面不存在内容
+右上角的 Afdian 图标：根据上述图标自行修改，有需要的可打开本模板的 _navbar.md 自行获取。
 
-# 借物表
+# 附言
 
-## Docsify 脚本
-
-## UIVerse 样式
+其他修改的内容均在对应位置有注释，有兴趣可发起 issue 与我交流。
